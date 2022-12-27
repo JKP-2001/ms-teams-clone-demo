@@ -19,7 +19,7 @@ const ParticularAssignment = () => {
                 {/* <div ><SecondNav/></div> */}
                     
                         <div className="back pt-8 pl-14">
-                            <span className='text-[#6064c9] font-semibold text-base font-["Segoe UI Web", "Segoe UI", "Segoe WP", "Segoe UI Emoji", Tahoma, Arial, sans-serif]'><Link to="/" ><ChevronLeftIcon fontSize='large'/> <span>Back</span></Link></span>
+                        <span className='text-[#6064c9] font-semibold text-base font-["Segoe UI Web", "Segoe UI", "Segoe WP", "Segoe UI Emoji", Tahoma, Arial, sans-serif]'><Link to="/assignment" ><ChevronLeftIcon fontSize='large'/> <span>Back</span></Link></span>
                         </div>
 
                         <div className="back pt-[26px] md:pt-[22px] pl-4 order-last justify-end pr-32">

@@ -4,7 +4,7 @@ import grp_icon from "../../images/grp_icon.jpg"
 
 const AssignmentCard = () => {
   return (
-    <div className="card my-2 rounded-xl bg-white hover:shadow-xl border-black hover:cursor-pointer" >
+    <Link to="/assignment/lp"><div className="card my-2 rounded-xl bg-white hover:shadow-xl border-[3px] hover:cursor-pointer" >
         <div className=" flex item">
             <div class="grp_image mx-8 pt-[32px]">
                 <div className="account flex"><img className="rounded-2xl" src={grp_icon} alt="" /></div>
@@ -16,6 +16,7 @@ const AssignmentCard = () => {
 
         </div>
     </div>
+    </Link>
   )
 }
 
