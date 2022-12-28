@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ms-teams-clone-demo/static/css/main.7e3b0d5d.css",
+    "main.js": "/ms-teams-clone-demo/static/js/main.102aae73.js",
+    "static/js/787.0fc9a2a1.chunk.js": "/ms-teams-clone-demo/static/js/787.0fc9a2a1.chunk.js",
+    "static/media/view-student-roster.svg": "/ms-teams-clone-demo/static/media/view-student-roster.e7fe8aa868fda2a3e029974f6c541ea2.svg",
+    "static/media/user.png": "/ms-teams-clone-demo/static/media/user.3f233af2f04dd498d5db.png",
+    "static/media/team_mem3.svg": "/ms-teams-clone-demo/static/media/team_mem3.9cabf8c2471c2c22af25ada5587e6c12.svg",
+    "static/media/team_mem1.svg": "/ms-teams-clone-demo/static/media/team_mem1.47b95ab38d136e82dfb02d1aab323859.svg",
+    "static/media/team_mem2.svg": "/ms-teams-clone-demo/static/media/team_mem2.064a3b17fbeadf083f968f05e11f6559.svg",
+    "static/media/logo.svg": "/ms-teams-clone-demo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/create_icon.svg": "/ms-teams-clone-demo/static/media/create_icon.6574c4ae218c9f9836544c41f72b5e4e.svg",
+    "static/media/join_code.svg": "/ms-teams-clone-demo/static/media/join_code.7f2c7af59bc5c54bbeaaa4f9af244b54.svg",
+    "index.html": "/ms-teams-clone-demo/index.html",
+    "main.7e3b0d5d.css.map": "/ms-teams-clone-demo/static/css/main.7e3b0d5d.css.map",
+    "main.102aae73.js.map": "/ms-teams-clone-demo/static/js/main.102aae73.js.map",
+    "787.0fc9a2a1.chunk.js.map": "/ms-teams-clone-demo/static/js/787.0fc9a2a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e3b0d5d.css",
+    "static/js/main.102aae73.js"
+  ]
+}
