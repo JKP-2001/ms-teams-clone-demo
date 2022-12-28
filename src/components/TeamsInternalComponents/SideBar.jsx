@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import GS from "../../images/GS.jpg"
 import { Link } from 'react-router-dom';
+import GrpContext from '../../Context/GrpContext/GrpContext';
 
 const SideBar = () => {
+  const {grpState,setgrpState} = useContext(GrpContext);
+
+  const clickAssign = ()=>{
+    setgrpState("assignment");
+    window.scrollTo(0, 0);
+  }
+
+  const clickGeneral = ()=>{
+    setgrpState("general");
+  }
+
   return (
     <div class="ml-[72px] mt-[48px] grid-cols-1 w-[300px] h-full fixed z-30 bg-[#f0f0f0] shadow-2xl  hidden min-[946px]:block">
       <div className="sidecompo mt-5 text-sm font-normal">
@@ -21,7 +33,7 @@ const SideBar = () => {
         <div className="icon">
           <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md hover:text-black pl-[25px]">Home Page</div>
           <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md  hover:text-black pl-[25px]">Class Notebook</div>
-          <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md hover:text-black pl-[25px]">Assignments</div>
+          {grpState!=="assignment"?<div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md hover:text-black pl-[25px]" onClick={()=>clickAssign()}>Assignments</div>:<div className="text py-[5px] text-[#616161] bg-white hover:cursor-pointer hover:rounded-md hover:text-black pl-[25px]" onClick={()=>clickAssign()}>Assignments</div>}
           <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md hover:text-black pl-[25px]">Grades</div>
         </div>
         <div className="gap pt-5">
@@ -30,9 +42,11 @@ const SideBar = () => {
         <div className="grp_name pt-3 pl-[25px] text-sm font-semibold">
           Channels
         </div>
-        <div className="gap pt-3">
-          <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md pl-[25px]">General</div>
-        </div>
+        {grpState!=="general"?<div className="gap pt-3">
+          <div className="text py-[5px] text-[#616161] hover:bg-white hover:cursor-pointer hover:rounded-md pl-[25px]" onClick={()=>clickGeneral()}>General</div>
+        </div>:<div className="gap pt-3">
+          <div className="text py-[5px] text-[#616161] bg-white hover:cursor-pointer hover:rounded-md pl-[25px]" onClick={()=>clickGeneral()}>General</div>
+        </div>}
       </div>
     </div>
   )

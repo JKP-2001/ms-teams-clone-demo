@@ -7,11 +7,11 @@ import CalendarTodaySharpIcon from '@mui/icons-material/CalendarTodaySharp';
 const MeetingCard = (props) => {
     return (
         <div className="flex min-[946px]:w-[90%]">
-            <div className="image">
+            <div className="image mr-2">
                 <PersonOutlinedIcon fontSize='medium' />
             </div>
 
-            <div className="container mx-2 m-auto m-h-12 rounded-md mb-8">
+            <div className="container  m-h-12 rounded-md mb-8">
                 <div className="upper bg-white">
                     <div className="flex">
                         <div className="authorname pl-3 pt-1 font-semibold">
@@ -39,7 +39,7 @@ const MeetingCard = (props) => {
                     </div>
                 </div>
                 <div className="lower">
-                    <div className="name px-3 py-2 border-[0.2px] bg-white rounded-b-md"><ReplyOutlinedIcon fontSize='small' /> Reply</div>
+                    <div className="name px-3 py-2 border-t-[0.1px] bg-white rounded-b-md"><ReplyOutlinedIcon fontSize='small' /> Reply</div>
                 </div>
             </div>
         </div>

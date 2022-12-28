@@ -24,39 +24,39 @@ export default function SideBarComponent() {
   return (
     
     <div style={{backgroundColor:'#ebebeb'}} class='fixed top-[48px] bottom-[0px] text-center text-[10px] w-[72px] grid gap-2 -z-1'>
-        <button class='mt-8 w-full hover:bg-white'>
+        <button class='mt-8 w-full hover:bg-white '>
             <div><NotificationsActiveOutlinedIcon/></div>
             <div>Activity</div>
         </button>
-        <button class='hover:bg-white'>
+        <button class='hover:bg-white '>
             <div><ChatBubbleOutlineOutlinedIcon/></div>
             <div>Chats</div>
         </button>
-        {currloc.includes("home") || currloc.includes("grp") ? <button class='bg-white'>
+        {currloc.includes("home") || currloc.includes("grp") ? <button class='bg-white text-[#444791]'>
             <Link to="/home"><div><GroupsOutlinedIcon/></div>
-            <div>Teams</div></Link>
-        </button>:<button class='hover:bg-white'>
+            <div className='text-[#444791] font-bold '>Teams</div></Link>
+        </button>:<button class='hover:bg-white hover:text-[#444791]'>
             <Link to="/home"><div><GroupsOutlinedIcon/></div>
-            <div>Teams</div></Link>
+            <div className=''>Teams</div></Link>
         </button>}
         
-        {currloc.includes("assignment")?<button class='bg-white'>
+        {currloc.includes("assignment")?<button class='bg-white text-[#444791]'>
             <Link to="/assignment"><div ><AssignmentOutlinedIcon/></div></Link>
-            <div className='text-[#444791]'>Assignments</div>
-        </button>:<button class='hover:bg-white'>
-            <Link to="/assignment"><div ><AssignmentOutlinedIcon/></div></Link>
-            <div className='hover:text-[#444791]'>Assignments</div>
+            <div className='text-[#444791] font-bold '>Assignments</div>
+        </button>:<button class='hover:bg-white hover:text-[#444791]'>
+            <Link to="/assignment"><div ><AssignmentOutlinedIcon/></div>
+            <div className=''>Assignments</div></Link>
         </button>   }
 
-        <button class='hover:bg-white'>
+        <button class='hover:bg-white '>
             <div><CalendarMonthOutlinedIcon/></div>
             <div>Calendar</div>
         </button>
-        <button class='hover:bg-white'>
+        <button class='hover:bg-white '>
             <div><CallOutlinedIcon/></div>
             <div>Calls</div>
         </button>
-        <button class='hover:bg-white'>
+        <button class='hover:bg-white '>
             <div><InsertDriveFileOutlinedIcon/></div>
             <div>Files</div>
         </button>
